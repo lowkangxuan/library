@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="form-modal">
+        <h2>
+            Enter a new book!
+        </h2>
+        <form>
+            <div class="input-area">
+                <input type="text" name="title" id="title" placeholder="Title" required>
+                <input type="text" name="author" id="author" placeholder="Author" required>
+                <input type="number" name="pages" id="pages" placeholder="No. of Pages" required>
+                <select name="read-status" id="read-status">
+                    <option value="read">Read</option>
+                    <option value="unread" selected>Unread</option>
+                </select>
+            </div>
+            <button type="submit" id="add-book">Add Book</button>
+        </form>
+    </div>
+    <div class="book-list">
+
+    </div>
+</div>
+</body>
+</html>
