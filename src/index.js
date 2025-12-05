@@ -13,9 +13,22 @@ const isReadInput = document.getElementById("read-status");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
+    console.log(titleInput.validity);
     e.preventDefault();
     createNewBook();
+
     form.reset();
+});
+
+pageInput.addEventListener("input", (e) => {
+    console.log(pageInput.validity);
+    if (pageInput.validity.rangeUnderflow || pageInput.validity.rangeUnderflow) {
+        pageInput.setCustomValidity("Please enter a number within range 1 - 999");
+        console.log("test");
+    }
+    else {
+        pageInput.setCustomValidity("");
+    }
 });
 
 

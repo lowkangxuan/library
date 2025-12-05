@@ -12,6 +12,18 @@ body {
     margin: 0;
 }
 
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid:required {
+    /*background-image: linear-gradient(to right, pink, lightgreen);*/
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
